@@ -2,7 +2,8 @@
     "name": "Tilemaps and Levels",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*"
     },
     "files": [
         "main.ts",
