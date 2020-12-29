@@ -1,3 +1,7 @@
+forever(() => {
+    music.setVolume(20)
+    music.playMelody("E F B A E A D - ", 120)
+})
 
 let hero = sprites.create(img`
     . . . . . f f f f . . . . .
@@ -20,6 +24,7 @@ let hero = sprites.create(img`
 controller.moveSprite(hero, 100, 100)
 let currentLevel = 0
 nextLevel()
+
 scene.onOverlapTile(SpriteKind.Player, img`
     c c c c c c c c c c c c c c c c
     c c c c c c c c c c c b b b b c
@@ -41,6 +46,7 @@ scene.onOverlapTile(SpriteKind.Player, img`
     currentLevel += 1
     nextLevel()
 })
+
 scene.onOverlapTile(SpriteKind.Player, img`
     d d d d d d d d d d d d d d b c
     d d d d d d d d d d d d d d b c
@@ -62,12 +68,15 @@ scene.onOverlapTile(SpriteKind.Player, img`
     currentLevel -= 1
     previousLevel()
 })
+
 function nextLevel () {
     if(currentLevel == 0){
         tiles.setTilemap(tilemap`level`)
     } else if (currentLevel == 1) {
         tiles.setTilemap(tilemap`level1`)
     } else if (currentLevel == 2) {
+        tiles.setTilemap(tilemap`level2`)
+    } else if (currentLevel == 3) {
         game.over(true, effects.blizzard)
     }
     tiles.placeOnRandomTile(hero, img`
@@ -94,7 +103,9 @@ function nextLevel () {
 function previousLevel () {
     if(currentLevel == 0){
         tiles.setTilemap(tilemap`level`)
-    } else {
+    } else if (currentLevel == 1) {
+        tiles.setTilemap(tilemap`level1`)
+    }  else {
         currentLevel = 0
         return
     }

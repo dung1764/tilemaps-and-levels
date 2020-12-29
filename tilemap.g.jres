@@ -61,6 +61,38 @@
             "sprites.dungeon.stairWest"
         ]
     },
+    "level2": {
+        "id": "level2",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAwYTAwMDgwMDA0MDUwZjA1MDUwZjA1MGYwNTA2MTcwYTBhMGExMTBhMGEwYTEwMDcwODBhMTEwYTBhMTgxNTExMGEwNzBjMGExNDBhMGExMTExMTEwYTBkMDgxMTBhMTEwYTBhMGEwYTBhMDcwODBiMGEwYTBhMGExMTBhMGEwNzA5MDMwZTAzMDMwZTAzMGUwMzAyMTIwMTAxMDExNjAxMDEwMTEzMDEyMjIyMjIyMjIyMDAwMDAyMDAyMDAyMDIwMDIwMjAwMjAwMjAyMjIwMjIyMDAwMDAyMDIyMDAwMDAyMjAyMjIyMjIyMjIyMDAwMDAwMDAwMA==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.floorDark0",
+            "sprites.dungeon.purpleOuterSouthWest",
+            "sprites.dungeon.purpleOuterSouth1",
+            "sprites.dungeon.purpleOuterNorthWest",
+            "sprites.dungeon.purpleOuterNorth1",
+            "sprites.dungeon.purpleOuterNorthEast",
+            "sprites.dungeon.purpleOuterEast0",
+            "sprites.dungeon.purpleOuterWest1",
+            "sprites.dungeon.purpleOuterSouthEast",
+            "sprites.dungeon.floorLight2",
+            "sprites.dungeon.floorLight3",
+            "sprites.dungeon.purpleOuterWest2",
+            "sprites.dungeon.purpleOuterEast2",
+            "sprites.dungeon.purpleOuterSouth2",
+            "sprites.dungeon.purpleOuterNorth2",
+            "sprites.dungeon.stairLarge",
+            "sprites.dungeon.hazardLava1",
+            "sprites.dungeon.floorDarkDiamond",
+            "sprites.dungeon.floorDark1",
+            "sprites.dungeon.floorLight5",
+            "sprites.dungeon.floorLightMoss",
+            "sprites.dungeon.floorDark5",
+            "sprites.dungeon.stairWest",
+            "sprites.dungeon.collectibleRedCrystal"
+        ]
+    },
     "*": {
         "mimeType": "image/x-mkcd-f4",
         "dataEncoding": "base64",
