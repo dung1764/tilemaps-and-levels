@@ -64,7 +64,7 @@
     "level2": {
         "id": "level2",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYTAwMDgwMDA0MDUwZjA1MDUwZjA1MGYwNTA2MTcwYTBhMGExMTBhMGEwYTEwMDcwODBhMTEwYTBhMTgxNTExMGEwNzBjMGExNDBhMGExMTExMTEwYTBkMDgxMTBhMTEwYTBhMGEwYTBhMDcwODBiMGEwYTBhMGExMTBhMGEwNzA5MDMwZTAzMDMwZTAzMGUwMzAyMTIwMTAxMDExNjAxMDEwMTEzMDEyMjIyMjIyMjIyMDAwMDAyMDAyMDAyMDIwMDIwMjAwMjAwMjAyMjIwMjIyMDAwMDAyMDIyMDAwMDAyMjAyMjIyMjIyMjIyMDAwMDAwMDAwMA==",
+        "data": "MTAwYTAwMDgwMDA0MDUwZjA1MDUwZjA1MGYwNTA2MTYwYTBhMGExMDBhMGEwYTBhMDcwODBhMTAwYTE4MTcxNDEwMGEwNzBjMGExMzBhMGExMDE4MTAwYTBkMDgxODBhMTAwYTBhMGEwYTBhMDcwODBiMGEwYTBhMGExODBhMGEwNzA5MDMwZTAzMDMwZTAzMGUwMzAyMTEwMTAxMDExNTAxMDEwMTEyMDEyMjIyMjIyMjIyMDAwMDAyMDAyMDAyMDIwMjIwMjAwMjAwMjAyMjIwMjIyMDAwMDAyMDIyMDAwMDAyMjAyMjIyMjIyMjIyMDAwMDAwMDAwMA==",
         "tileset": [
             "myTiles.transparency16",
             "sprites.dungeon.floorDark0",
@@ -82,7 +82,6 @@
             "sprites.dungeon.purpleOuterEast2",
             "sprites.dungeon.purpleOuterSouth2",
             "sprites.dungeon.purpleOuterNorth2",
-            "sprites.dungeon.stairLarge",
             "sprites.dungeon.hazardLava1",
             "sprites.dungeon.floorDarkDiamond",
             "sprites.dungeon.floorDark1",
@@ -90,7 +89,8 @@
             "sprites.dungeon.floorLightMoss",
             "sprites.dungeon.floorDark5",
             "sprites.dungeon.stairWest",
-            "sprites.dungeon.collectibleRedCrystal"
+            "sprites.dungeon.collectibleRedCrystal",
+            "sprites.dungeon.hazardLava0"
         ]
     },
     "*": {

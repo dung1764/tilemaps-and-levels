@@ -3,7 +3,7 @@ forever(() => {
     music.playMelody("E F B A E A D - ", 120)
 })
 
-//controller
+//controller up | down | left | top
  controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
     animation.runImageAnimation(
     hero,
@@ -309,6 +309,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     )
 })
 
+// on start
 let hero = sprites.create(img`
     . . . . . . f f f f . . . . . .
     . . . . f f f 2 2 f f f . . . .
@@ -331,6 +332,7 @@ controller.moveSprite(hero, 50, 50)
 let currentLevel = 0
 nextLevel()
 
+// overlap
 scene.onOverlapTile(SpriteKind.Player, img`
     c c c c c c c c c c c c c c c c
     c c c c c c c c c c c b b b b c
@@ -375,6 +377,28 @@ scene.onOverlapTile(SpriteKind.Player, img`
     previousLevel()
 })
 
+scene.onOverlapTile(SpriteKind.Player, img`
+    . . . . . . . . . . . . . . . .
+    . . . . . . 4 4 4 4 . . . . . .
+    . . . . 4 4 4 5 5 4 4 4 . . . .
+    . . . 3 3 3 3 4 4 4 4 4 4 . . .
+    . . 4 3 3 3 3 2 2 2 1 1 4 4 . .
+    . . 3 3 3 3 3 2 2 2 1 1 5 4 . .
+    . 4 3 3 3 3 2 2 2 2 2 5 5 4 4 .
+    . 4 3 3 3 2 2 2 4 4 4 4 5 4 4 .
+    . 4 4 3 3 2 2 4 4 4 4 4 4 4 4 .
+    . 4 2 3 3 2 2 4 4 4 4 4 4 4 4 .
+    . . 4 2 3 3 2 4 4 4 4 4 2 4 . .
+    . . 4 2 2 3 2 2 4 4 4 2 4 4 . .
+    . . . 4 2 2 2 2 2 2 2 2 4 . . .
+    . . . . 4 4 2 2 2 2 4 4 . . . .
+    . . . . . . 4 4 4 4 . . . . . .
+    . . . . . . . . . . . . . . . .
+`, function(sprite: Sprite, location: tiles.Location) {
+    game.over(true, effects.blizzard)
+})
+
+// function
 function nextLevel () {
     if(currentLevel == 0){
         tiles.setTilemap(tilemap`level`)
@@ -382,8 +406,6 @@ function nextLevel () {
         tiles.setTilemap(tilemap`level1`)
     } else if (currentLevel == 2) {
         tiles.setTilemap(tilemap`level2`)
-    } else if (currentLevel == 3) {
-        game.over(true, effects.blizzard)
     }
     tiles.placeOnRandomTile(hero, img`
         d d d d d d d d d d d d d d b c
